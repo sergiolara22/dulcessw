@@ -22,7 +22,7 @@ class Producto(BaseModel):
 ### ✅ RUTAS CRUD ###
 @app.get("/")
 def home():
-    return {"message": "POS Dulcería funcionando 🍬"}
+    return {"message": "Dulcería funcionando 🍬"}
 
 # Leer todos los productos
 @app.get("/productos", response_model=List[Producto])
